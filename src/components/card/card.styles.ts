@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     container: {
         padding: 4,
         backgroundColor: colors.white,
+        maxWidth: '97%',
         borderRadius: 10,
         marginBottom: 15,
         shadowColor: '#000',
