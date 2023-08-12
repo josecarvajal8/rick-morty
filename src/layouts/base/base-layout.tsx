@@ -9,7 +9,7 @@ interface BaseLayoutProps {
 }
 export const BaseLayout: FC<BaseLayoutProps> = ({ children, title, onRightButtonClick }) => {
     return (
-        <View style={{ height: '100%' }}>
+        <View style={{ flex: 1 }}>
             <SafeAreaView style={styles.navbar}>
                 <View style={styles.navbarContent}>
                     {onRightButtonClick ? <TouchableOpacity
@@ -20,7 +20,6 @@ export const BaseLayout: FC<BaseLayoutProps> = ({ children, title, onRightButton
                     <View style={styles.box} />
                 </View>
             </SafeAreaView>
-            
             {children}
         </View>
     );
